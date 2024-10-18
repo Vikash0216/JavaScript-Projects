@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Spotify
+    </title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="utility.css">
+    <link rel="stylesheet" href="mediaquery.css">
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo margin1 ">
+            <img class="filter" src="images&svg/logo.svg" alt="">
+        </div>
+        <div class="searchbar flex margin1">
+            <div class="homelogo">
+                <img src="images&svg/home.svg" class="filter" alt="home">
+            </div>
+            <div class="searchbox"> 
+                <div class="search-box">
+                <input type="text" class="search" id="searchInput" placeholder="what do you want to play?" >
+                <div id="results" class="results-container"></div>
+            </div>
+                <div class="searchlogo">
+                    <img src="images&svg/search.svg" alt="search">
+                </div>
+                <div class="browselogo">
+                    <img src="images&svg/browse.svg" alt="browse">
+                </div>
+            </div>
+        </div>
+        <div class="signlog margin1">
+            <button class="sign">Signup</button>
+            <button class="login">login</button>
+        </div>
+    </nav>
+    <div class="maincontent">
+        <aside class="librarysection">
+            <div class="library">
+                <div class="libraryhead">
+                    <img src="images&svg/library.svg" alt="">
+                    <span>Your Library</span>
+                </div>
+                <div class="add">
+                    <img src="images&svg/plus.svg" alt="">
+                </div>
+                <div class="closehamburger">
+                    <img src="images&svg/close.svg" class="filter" alt="">
+                </div>
+            </div>
+            <div class="playlist">
+                <div class="playlistcard">
+                    <h5>Create your first playlist</h5>
+                    <h6>It's easy we wll help you</h6>
+                    <button class="createplaylistbutton">Create play list</button>
+                </div>
+                <div class="playlistcard">
+                    <h5>Let's find some podcasts to follow</h5>
+                    <h6>We'll keep you updated on new episodes</h6>
+                    <button class="browsepodcastbutton">Browse podcast</button>
+                </div>
+                <div class="songslist">
+                    <h3>Device Songs</h3>
+                    <ul>
+                        <!-- Song List -->
+                    </ul>
+                </div>
+            </div>
+            <div class="playlistfooter">
+                <div><a href="https://www.spotify.com/in-en/legal/"> <span>Legal</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/safetyandprivacy/"><span>Safety & Privacy Center</span></a>
+                </div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/"><span>Privacy Policy</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/cookies-policy/"><span>Cookies</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/legal/privacy-policy/#s3"><span>About Ads</span></a></div>
+                <div><a href="https://www.spotify.com/in-en/accessibility/"><span>Accessibility</span></a></div>
+            </div>
+            <div class="language">
+                <button class="languagebutton">
+                    <img src="images&svg/globe.svg" class="filter" alt="">
+                    English
+                </button>
+            </div>
+        </aside>
+        <section class="songsection">
+            <div class="heading">
+                <div class="artistheading">
+                    <div class="hamburger">
+                        <img src="images&svg/hmaburger.svg" class="filter" alt="">
+                    </div>
+                    <h2>Popular Artits</h2>
+                </div>
+                <div class="shomore">
+                    <h5>Show more</h>
+                </div>
+            </div>
+            <div class="cardbox">
+            </div>
+            <div class="playbar">
+                <div class="songdetails">
+                    <div class="songname">
+                    </div>
+                    <div class="songbutton">
+                        <img id="prevsong" src="images&svg/prevsong.svg" alt="">
+                        <img id="playsong" src="images&svg/playsong.svg" alt="">
+                        <img id="nextsong" src="images&svg/nextsong.svg" alt="">
+                    </div>
+                    <div class="songduration">
+                    </div>
+                </div>
+                <div class="songline">
+                    <div class="playline"></div>
+                    <div class="circle"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+    <script src="app.js"></script>
+</body>
+
+</html>
